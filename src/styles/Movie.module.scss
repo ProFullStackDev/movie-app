@@ -1,0 +1,67 @@
+.movie_detail {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.details {
+  width: 40%;
+  font-family: sans-serif;
+}
+
+.poster {
+  border: 10px solid white;
+  box-shadow: #33333385 2px 5px 13px 3px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 50px;
+  color: #444;
+  font-family: "emoji";
+  font-weight: 700;
+}
+
+.description {
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 200%;
+}
+
+.back {
+  color: #888;
+  font-family: math;
+  cursor: pointer;
+  display: table;
+}
+
+.rating {
+  display: flex;
+  gap: 7px;
+}
+
+@media (max-width: 1366px) {
+  .movie_detail {
+    flex-direction: column;
+    align-items: center;
+
+    .poster img {
+      width: 100%;
+      height: auto;
+    }
+
+    .details,
+    .poster {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 968px) {
+
+  .details,
+  .poster {
+    width: 90% !important;
+  }
+}

@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+.movie_poster {
+  display: flex;
+  gap: 50px 100px;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  padding: 50px;
+}
+
+.poster {
+  border-radius: 10px;
+  box-shadow: $shadow-sm;
+  transition: 0.5s;
+  cursor: pointer;
+
+  img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+    height: 100px;
+    width: 300px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #444;
+    padding: 20px;
+  }
+}
+
+.poster:hover {
+  box-shadow: $shadow-md;
+  transform: scale(1.01);
+}

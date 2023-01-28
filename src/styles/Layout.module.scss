@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.header {
+  height: 70px;
+  box-shadow: $shadow-lg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 25px;
+  color: #59a0f9;
+  font-family: var(--carter-font);
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  right: 70px;
+  color: #a3a3a3;
+  font-family: var(--carter-font);
+}
